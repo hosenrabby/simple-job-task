@@ -1,36 +1,39 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 👗 Ladies Fashion Store
 
-## Getting Started
+A modern **Next.js + MongoDB** web application for browsing and managing ladies’ fashion products.  
+Built with **Next.js 14 (App Router)**, **TailwindCSS**, and **daisyUI**.
 
-First, run the development server:
+---
 
-```bash
+## 🚀 Features
+- 🏠 Home page displaying all products
+- 📦 Product details page (dynamic route)
+- 🔗 REST API with CRUD operations
+- 🎨 Modern UI with TailwindCSS + daisyUI
+- ⚡ Optimized for performance with Next.js
+
+---
+
+## 🛣 Routes Summary
+
+### 🌐 Frontend Pages
+- `/` → Home Page (lists all products)
+- `/products/[id]` → Product Details Page (dynamic)
+
+### 🔌 API Endpoints
+- `GET /api/products` → Fetch all products  
+- `POST /api/products` → Add a new product  
+- `GET /api/products/[id]` → Get single product details  
+- `PUT /api/products/[id]` → Update a product  
+- `DELETE /api/products/[id]` → Delete a product  
+
+---
+
+### Clone the Repository
+git clone https://github.com/your-username/ladies-fashion-store.git
+cd ladies-fashion-store
+npm install
+MONGODB_URI=your_mongodb_connection_string
+NEXT_PUBLIC_BASE_URL=http://localhost:3000
+Run Development Server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
